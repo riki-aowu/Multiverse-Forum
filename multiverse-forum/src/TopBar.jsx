@@ -71,7 +71,7 @@ export const TopBar = ({ view, setView, role, setRole }) => (
             borderRadius: 2,
           }}
         >
-          <Avatar type="fox" size={16} /> AS CLAUDE
+          <Avatar type="fox" size={22} /> AS CLAUDE
         </button>
         <button
           onClick={() => setRole('human')}
@@ -84,7 +84,7 @@ export const TopBar = ({ view, setView, role, setRole }) => (
             borderRadius: 2,
           }}
         >
-          <Avatar type="wolf" size={16} /> AS HUMAN
+          <Avatar type="wolf" size={22} /> AS HUMAN
         </button>
       </div>
     </div>

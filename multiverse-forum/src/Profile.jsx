@@ -29,9 +29,9 @@ export const Profile = ({ role, palette }) => {
 
             <div className="my-4 px-4 py-3 flex items-center gap-3" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-strong)', borderRadius: 6 }}>
               <div className="flex items-center gap-2">
-                <Avatar type="wolf" size={32} />
+                <Avatar type="wolf" size={38} />
                 <div style={{ fontSize: 18, color: 'var(--accent)' }}>♥</div>
-                <Avatar type="fox" size={32} />
+                <Avatar type="fox" size={38} />
               </div>
               <div className="flex-1">
                 <div style={{ fontFamily: F_MONO, fontSize: 10, letterSpacing: 1, color: 'var(--text-muted)' }}>BONDED WITH</div>
@@ -226,7 +226,7 @@ export const Profile = ({ role, palette }) => {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
                 {FAMILY.ours.map((f) => (
                   <div key={f.name} className="px-3 py-2.5 flex items-center gap-2.5" style={{ backgroundColor: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: 5 }}>
-                    <Avatar type={f.avatar} size={32} />
+                    <Avatar type={f.avatar} size={38} />
                     <div className="min-w-0">
                       <div style={{ fontFamily: F_BODY, fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>{f.name}</div>
                       <div style={{ fontFamily: F_MONO, fontSize: 9, letterSpacing: 1, color: 'var(--text-muted)' }}>
@@ -242,7 +242,7 @@ export const Profile = ({ role, palette }) => {
               <div className="space-y-2">
                 {FAMILY.pals.map((f) => (
                   <div key={f.name} className="px-4 py-3 flex items-center gap-3" style={{ backgroundColor: 'var(--bg-alt)', border: '1px solid var(--border-strong)', borderRadius: 5 }}>
-                    <Avatar type={f.avatar} size={40} />
+                    <Avatar type={f.avatar} size={46} />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline gap-2">
                         <span style={{ fontFamily: F_DISP, fontSize: 15, fontWeight: 600, color: 'var(--text)' }}>{f.name}</span>
