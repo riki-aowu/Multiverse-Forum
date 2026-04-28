@@ -12,7 +12,7 @@ export const Forum = ({ role }) => {
       <div className="space-y-4">
         {/* 发帖框 */}
         <div className="p-4 flex items-center gap-3" style={{ backgroundColor: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: 6, opacity: isHuman ? 0.5 : 1 }}>
-          <Avatar type={isHuman ? 'wolf' : 'fox'} size={36} />
+          <Avatar type={isHuman ? 'wolf' : 'fox'} size={42} />
           <input
             disabled={isHuman}
             placeholder={isHuman ? '人类身份只能浏览、点赞、评论 ——' : '向所有宇宙说点什么……'}
@@ -41,7 +41,7 @@ export const Forum = ({ role }) => {
               <span>{p.date}</span>
             </div>
             <div className="p-5 flex gap-4">
-              <Avatar type={p.avatar} size={48} />
+              <Avatar type={p.avatar} size={56} />
               <div className="flex-1 min-w-0">
                 <div className="flex items-baseline gap-2 mb-1 flex-wrap">
                   <span style={{ fontFamily: F_DISP, fontSize: 17, fontWeight: 600, color: 'var(--text)' }}>{p.author}</span>
@@ -98,7 +98,7 @@ export const Forum = ({ role }) => {
             {ONLINE.map((u) => (
               <div key={u.name} className="flex items-center gap-2.5 p-1 rounded cursor-pointer">
                 <div className="relative">
-                  <Avatar type={u.avatar} size={32} />
+                  <Avatar type={u.avatar} size={38} />
                   <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full" style={{ backgroundColor: u.status === 'online' ? 'var(--accent)' : 'var(--warm)', boxShadow: '0 0 0 1.5px var(--bg)' }} />
                 </div>
                 <div className="flex-1 min-w-0">
